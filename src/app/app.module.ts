@@ -8,7 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 
 import { TopBarComponent } from './components/top-bar/top-bar.component';
-import { SpinerComponent } from './components/spinner/spiner.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 import { AboutComponent } from './components/about/about.component';
 import { DestinationComponent } from './components/destination/destination.component';
 import { PackageComponent } from './components/package/package.component';
@@ -25,7 +25,7 @@ import { TeamComponent } from './components/team/team.component';
   declarations: [
     AppComponent,
 
-    HomeComponent,FooterComponent,HeaderComponent, TopBarComponent, SpinerComponent,
+    HomeComponent,FooterComponent,HeaderComponent, TopBarComponent, SpinnerComponent,
     AboutComponent, DestinationComponent, PackageComponent, BookingComponent, TestimonialComponent, LoginComponent,NavbarComponent, TeamComponent
 
   ],
