@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { LoginComponent } from './pages/login/login.component';
 
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
@@ -24,7 +25,6 @@ import { TeamComponent } from './components/team/team.component';
 @NgModule({
   declarations: [
     AppComponent,
-
     HomeComponent,FooterComponent,HeaderComponent, TopBarComponent, SpinnerComponent,
     AboutComponent, DestinationComponent, PackageComponent, BookingComponent, TestimonialComponent, LoginComponent,NavbarComponent, TeamComponent
 

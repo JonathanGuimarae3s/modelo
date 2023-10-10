@@ -1,0 +1,32 @@
+.form-label{
+    width: 100px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.form-control{
+    width: 250px;
+text-align: center;
+margin: 0 auto 20px;
+
+}
+.central{
+    text-align: center;
+    background-color: rgba(16, 15, 15, 0.892);
+    color:#bfbfbf;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px 700px 20px 700px;
+    height: 500px; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: ;
+    
+}
+#titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color:#f2f2f2;
+}
+.btn {
+   margin: 10px 10px 5px 5px ;
+}
