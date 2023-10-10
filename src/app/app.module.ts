@@ -15,18 +15,18 @@ import { DestinationComponent } from './components/destination/destination.compo
 import { PackageComponent } from './components/package/package.component';
 import { BookingComponent } from './components/booking/booking.component';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
-import { LoginComponent } from './login/login.component';
 
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TeamComponent } from './components/team/team.component';
+import { ButtonComponent } from './components/button/button.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,FooterComponent,HeaderComponent, TopBarComponent, SpinnerComponent,
-    AboutComponent, DestinationComponent, PackageComponent, BookingComponent, TestimonialComponent, LoginComponent,NavbarComponent, TeamComponent
+    AboutComponent, DestinationComponent, PackageComponent, BookingComponent, TestimonialComponent, LoginComponent,NavbarComponent, TeamComponent, ButtonComponent, 
 
   ],
   imports: [
