@@ -29,7 +29,9 @@ import { InputComponent } from './components/input/input.component';
   declarations: [
     AppComponent,
     HomeComponent,FooterComponent,HeaderComponent, TopBarComponent, SpinnerComponent,
-    AboutComponent, DestinationComponent, PackageComponent, BookingComponent, TestimonialComponent, LoginComponent,NavbarComponent, TeamComponent, ButtonComponent, CardComponent, ContainerComponent, InputComponent, 
+    AboutComponent, DestinationComponent, PackageComponent, BookingComponent, TestimonialComponent,
+     LoginComponent,NavbarComponent, TeamComponent, ButtonComponent, CardComponent, ContainerComponent, 
+     InputComponent,
 
   ],
   imports: [
