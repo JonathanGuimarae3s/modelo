@@ -23,15 +23,19 @@ import { ButtonComponent } from './components/button/button.component';
 import { CardComponent } from './components/card/card.component';
 import { ContainerComponent } from './components/container/container.component';
 import { InputComponent } from './components/input/input.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,FooterComponent,HeaderComponent, TopBarComponent, SpinnerComponent,
+
     AboutComponent, DestinationComponent, PackageComponent, BookingComponent, TestimonialComponent,
      LoginComponent,NavbarComponent, TeamComponent, ButtonComponent, CardComponent, ContainerComponent, 
      InputComponent,
+ DashboardComponent, 
+
 
   ],
   imports: [
