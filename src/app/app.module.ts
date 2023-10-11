@@ -30,7 +30,12 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
   declarations: [
     AppComponent,
     HomeComponent,FooterComponent,HeaderComponent, TopBarComponent, SpinnerComponent,
-    AboutComponent, DestinationComponent, PackageComponent, BookingComponent, TestimonialComponent, LoginComponent,NavbarComponent, TeamComponent, ButtonComponent, CardComponent, ContainerComponent, InputComponent, DashboardComponent, 
+
+    AboutComponent, DestinationComponent, PackageComponent, BookingComponent, TestimonialComponent,
+     LoginComponent,NavbarComponent, TeamComponent, ButtonComponent, CardComponent, ContainerComponent, 
+     InputComponent,
+ DashboardComponent, 
+
 
   ],
   imports: [
