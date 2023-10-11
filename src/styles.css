@@ -112,61 +112,61 @@
 
 @media (max-width: 991.98px) {
   .sticky-top.navbar-light {
-      position: relative;
-      background: #FFFFFF;
+    position: relative;
+    background: #FFFFFF;
   }
 
   .navbar-light .navbar-collapse {
-      margin-top: 15px;
-      border-top: 1px solid #DDDDDD;
+    margin-top: 15px;
+    border-top: 1px solid #DDDDDD;
   }
 
   .navbar-light .navbar-nav .nav-link,
   .sticky-top.navbar-light .navbar-nav .nav-link {
-      padding: 10px 0;
-      margin-left: 0;
-      color: var(--dark) !important;
+    padding: 10px 0;
+    margin-left: 0;
+    color: var(--dark) !important;
   }
 
   .navbar-light .navbar-brand img {
-      max-height: 45px;
+    max-height: 45px;
   }
 }
 
 @media (min-width: 992px) {
   .navbar-light {
-      position: absolute;
-      width: 100%;
-      top: 0;
-      left: 0;
-      border-bottom: 1px solid rgba(256, 256, 256, .1);
-      z-index: 999;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(256, 256, 256, .1);
+    z-index: 999;
   }
 
   .sticky-top.navbar-light {
-      position: fixed;
-      background: #FFFFFF;
+    position: fixed;
+    background: #FFFFFF;
   }
 
   .navbar-light .navbar-nav .nav-link::before {
-      position: absolute;
-      content: "";
-      width: 0;
-      height: 2px;
-      bottom: -1px;
-      left: 50%;
-      background: var(--primary);
-      transition: .5s;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: -1px;
+    left: 50%;
+    background: var(--primary);
+    transition: .5s;
   }
 
   .navbar-light .navbar-nav .nav-link:hover::before,
   .navbar-light .navbar-nav .nav-link.active::before {
-      width: calc(100% - 2px);
-      left: 1px;
+    width: calc(100% - 2px);
+    left: 1px;
   }
 
   .navbar-light .navbar-nav .nav-link.nav-contact::before {
-      display: none;
+    display: none;
   }
 }
 
@@ -179,7 +179,7 @@
   background-size: cover;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
   color: rgba(255, 255, 255, .5);
 }
 
@@ -268,7 +268,7 @@
 
 
 /*** Booking ***/
-.booking {
+[bookingg="booking]"] {
   background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(assets/img/barbinsc.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -326,16 +326,18 @@
 }
 
 @media (min-width: 768px) {
+
   .testimonial-carousel::before,
   .testimonial-carousel::after {
-      width: 200px;
+    width: 200px;
   }
 }
 
 @media (min-width: 992px) {
+
   .testimonial-carousel::before,
   .testimonial-carousel::after {
-      width: 300px;
+    width: 300px;
   }
 }
 

@@ -20,13 +20,16 @@ import { TestimonialComponent } from './components/testimonial/testimonial.compo
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TeamComponent } from './components/team/team.component';
 import { ButtonComponent } from './components/button/button.component';
+import { CardComponent } from './components/card/card.component';
+import { ContainerComponent } from './components/container/container.component';
+import { InputComponent } from './components/input/input.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,FooterComponent,HeaderComponent, TopBarComponent, SpinnerComponent,
-    AboutComponent, DestinationComponent, PackageComponent, BookingComponent, TestimonialComponent, LoginComponent,NavbarComponent, TeamComponent, ButtonComponent, 
+    AboutComponent, DestinationComponent, PackageComponent, BookingComponent, TestimonialComponent, LoginComponent,NavbarComponent, TeamComponent, ButtonComponent, CardComponent, ContainerComponent, InputComponent, 
 
   ],
   imports: [
