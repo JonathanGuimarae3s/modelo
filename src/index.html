@@ -52,6 +52,8 @@
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
+   
+
     <!-- Template Javascript -->
     <script>
       (function ($) {
@@ -119,6 +121,7 @@
           return false;
         });
 
+        
         // Testimonials carousel
         $(".testimonial-carousel").owlCarousel({
           autoplay: true,
@@ -142,5 +145,24 @@
         });
       })(jQuery);
     </script>
+
+<!-- Animação
+<script>
+  window.requestAnimationFrame = function(){
+    return(
+        window.requestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        window.msRequestAnimationFrame||
+        function(collback){
+            window.setTimeout(collback);
+        }
+    
+    );
+  };
+
+  -->
+</script>
   </body>
 </html>
