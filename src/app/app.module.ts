@@ -24,17 +24,17 @@ import { CardComponent } from './components/card/card.component';
 import { ContainerComponent } from './components/container/container.component';
 import { InputComponent } from './components/input/input.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { CursosComponent } from './pages/cursos/cursos.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,FooterComponent,HeaderComponent, TopBarComponent, SpinnerComponent,
-
+    HomeComponent, FooterComponent, HeaderComponent, TopBarComponent, SpinnerComponent,
     AboutComponent, DestinationComponent, PackageComponent, BookingComponent, TestimonialComponent,
-     LoginComponent,NavbarComponent, TeamComponent, ButtonComponent, CardComponent, ContainerComponent, 
-     InputComponent,
- DashboardComponent, 
+    LoginComponent, NavbarComponent, TeamComponent, ButtonComponent, CardComponent, ContainerComponent,
+    InputComponent, DashboardComponent, CursosComponent, 
 
 
   ],
