@@ -26,6 +26,10 @@ import { InputComponent } from './components/input/input.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { AgendamentoComponent } from './pages/agendamento/agendamento.component';
 
+
+import { BelezaFemininaComponent } from './pages/beleza-feminina/beleza-feminina.component';
+import { AgendarComponent } from './pages/agendar/agendar.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +38,7 @@ import { AgendamentoComponent } from './pages/agendamento/agendamento.component'
     AboutComponent, DestinationComponent, PackageComponent, BookingComponent, TestimonialComponent,
      LoginComponent,NavbarComponent, TeamComponent, ButtonComponent, CardComponent, ContainerComponent, 
      InputComponent,
- DashboardComponent, AgendamentoComponent
+ DashboardComponent, AgendamentoComponent, BelezaFemininaComponent, AgendarComponent, 
 
 
   ],
