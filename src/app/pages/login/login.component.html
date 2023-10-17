@@ -1,31 +1,44 @@
-<div class="central">
-  <div>
-    <br>
-    <br>
+<!-- <div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h4>Login</h4>
 
-    <h2 id="titulo">Login</h2>
+      <form #f="ngForm" (ngSubmit)="send(f)">
 
-
-    <div class="mb-3">
-      <label for="email" class="form-label">Email:</label>
-      <input type="email" class="form-control" id="email">
-
+        <app-input name="Senha" [(ngModel)]="datas.password" type="password ">
+        </app-input>
+      </form>
+      <app-button text="Entrar"></app-button>
     </div>
-    <div class="mb-3">
-      <label for="senha" class="form-label">senha:</label>
-      <input type="senha" class="form-control" id="senha">
-    </div>
-    <div>
-      <button class="btn btn-secondary">Entrar</button>
-    <app-button text="Entrar"></app-button>
-    </div>
-    <div>
-      <p></p>
-    </div>
-
   </div>
+</div> -->
 
+<main class="m-auto d-flex flex-column align-items-center">
+  <div
+    id="container-form"
+    class="m-auto d-flex flex-column align-items-center rounded bg-light"
+  >
+    <h4>Login</h4>
+    <form
+      action="../LoginAuthentication"
+      method="POST"
+      class="d-flex justify-content-center align-items-center flex-column"
+    >
+      <app-input name="Email" [(ngModel)]="datas.email" type="email">
+      </app-input>
+      <app-input name="Senha" [(ngModel)]="datas.password" type="password ">
+      </app-input>
 
-</div>
-<br>
-<br>
+      <p class="text-start">Esqueceu a senha?</p>
+
+      <button type="button" class="btn btn-primary" type="ngSubmit">
+        Entrar
+      </button>
+    </form>
+    <a class="nav-link links mt-3" href="../Home/home.jsp">
+      <h6>
+        <b> Retornar ao site</b>
+      </h6>
+    </a>
+  </div>
+</main>

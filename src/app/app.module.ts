@@ -1,7 +1,10 @@
+// angular
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+// componentes
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -21,7 +24,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { TeamComponent } from './components/team/team.component';
 import { ButtonComponent } from './components/button/button.component';
 import { CardComponent } from './components/card/card.component';
-import { ContainerComponent } from './components/container/container.component';
+
 import { InputComponent } from './components/input/input.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
@@ -29,18 +32,31 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,FooterComponent,HeaderComponent, TopBarComponent, SpinnerComponent,
+    HomeComponent,
+    FooterComponent,
+    HeaderComponent,
+    TopBarComponent,
+    SpinnerComponent,
+    AboutComponent,
+    DestinationComponent,
+    PackageComponent,
+    BookingComponent,
+    TestimonialComponent,
+    LoginComponent,
+    NavbarComponent,
+    TeamComponent,
+    ButtonComponent,
+    CardComponent,
 
-    AboutComponent, DestinationComponent, PackageComponent, BookingComponent, TestimonialComponent,
-     LoginComponent,NavbarComponent, TeamComponent, ButtonComponent, CardComponent, ContainerComponent, 
-     InputComponent,
- DashboardComponent, 
+    InputComponent,
+    DashboardComponent,
 
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
