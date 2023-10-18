@@ -8,19 +8,18 @@ import { AgendamentoComponent } from './pages/agendamento/agendamento.component'
 import { BelezaFemininaComponent } from './pages/beleza-feminina/beleza-feminina.component';
 
 import { CursosComponent } from './pages/cursos/cursos.component';
+import { CursosAddComponent } from './pages/cursos-add/cursos-add.component';
 
 
 const routes: Routes = [
 
-  {path:'login',component:LoginComponent},
-  {path:'',component:HomeComponent},
-  {path: 'dashboard', component:DashboardComponent},
-
-  {path: 'agendamento', component:AgendamentoComponent},
-  {path: 'belezafeminina', component:BelezaFemininaComponent},
-
-
-  {path:'cursos', component:CursosComponent},
+  { path: 'login', component: LoginComponent },
+  { path: '', component: HomeComponent },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'agendamento', component: AgendamentoComponent },
+  { path: 'belezafeminina', component: BelezaFemininaComponent },
+  { path: 'cursos', component: CursosComponent },
+  { path: 'cursos-add', component: CursosAddComponent },
 
 ];
 

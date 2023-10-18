@@ -35,10 +35,13 @@ import { CursosComponent } from './pages/cursos/cursos.component';
 
 
 import { BelezaFemininaComponent } from './pages/beleza-feminina/beleza-feminina.component';
-import { AgendarComponent } from './pages/agendar/agendar.component';
+import { CursosAddComponent } from './pages/cursos-add/cursos-add.component';
 
 @NgModule({
   declarations: [
+    BelezaFemininaComponent,
+     CursosComponent,
+      AgendamentoComponent,
     AppComponent,
     HomeComponent,
     FooterComponent,
@@ -58,6 +61,7 @@ import { AgendarComponent } from './pages/agendar/agendar.component';
 
     InputComponent,
     DashboardComponent,
+    CursosAddComponent,
 
 
   ],
