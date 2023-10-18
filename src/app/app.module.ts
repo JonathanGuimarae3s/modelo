@@ -35,7 +35,13 @@ import { CursosComponent } from './pages/cursos/cursos.component';
 
 
 import { BelezaFemininaComponent } from './pages/beleza-feminina/beleza-feminina.component';
+
 import { CursosAddComponent } from './pages/cursos-add/cursos-add.component';
+
+
+import { CardCursosComponent } from './components/card-cursos/card-cursos.component';
+
+
 
 @NgModule({
   declarations: [
@@ -61,7 +67,12 @@ import { CursosAddComponent } from './pages/cursos-add/cursos-add.component';
 
     InputComponent,
     DashboardComponent,
+
     CursosAddComponent,
+
+    CardCursosComponent,
+
+
 
 
   ],
