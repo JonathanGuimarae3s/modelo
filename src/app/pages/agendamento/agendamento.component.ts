@@ -16,6 +16,6 @@ export class AgendamentoComponent {
   constructor (private http: HttpClient){}
 
   getTarefasAgendadas() {
-    return this.http.get('/api/tarefas-agendadas');
+    return this.http.get('/api----');
   }
 }
