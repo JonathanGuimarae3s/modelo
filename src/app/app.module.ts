@@ -40,6 +40,8 @@ import { CursosAddComponent } from './pages/cursos-add/cursos-add.component';
 
 
 import { CardCursosComponent } from './components/card-cursos/card-cursos.component';
+import { JavaScriptComponent } from './java-script/java-script.component';
+import { JSComponent } from './js/js.component';
 
 
 
@@ -71,6 +73,8 @@ import { CardCursosComponent } from './components/card-cursos/card-cursos.compon
     CursosAddComponent,
 
     CardCursosComponent,
+      JavaScriptComponent,
+      JSComponent,
 
 
 
