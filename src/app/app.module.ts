@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from './shared/shared.module';
+
 // componentes
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -22,7 +24,6 @@ import { TestimonialComponent } from './components/testimonial/testimonial.compo
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TeamComponent } from './components/team/team.component';
-import { ButtonComponent } from './components/button/button.component';
 import { CardComponent } from './components/card/card.component';
 
 import { InputComponent } from './components/input/input.component';
@@ -40,7 +41,6 @@ import { CursosAddComponent } from './pages/cursos-add/cursos-add.component';
 
 
 import { CardCursosComponent } from './components/card-cursos/card-cursos.component';
-
 
 
 
@@ -63,7 +63,6 @@ import { CardCursosComponent } from './components/card-cursos/card-cursos.compon
     LoginComponent,
     NavbarComponent,
     TeamComponent,
-    ButtonComponent,
     CardComponent,
 
     InputComponent,
@@ -72,7 +71,7 @@ import { CardCursosComponent } from './components/card-cursos/card-cursos.compon
     CursosAddComponent,
 
     CardCursosComponent,
-    
+
 
 
 
@@ -81,7 +80,7 @@ import { CardCursosComponent } from './components/card-cursos/card-cursos.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule, FormsModule
+    HttpClientModule, FormsModule,SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

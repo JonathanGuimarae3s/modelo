@@ -20,7 +20,6 @@ const routes: Routes = [
   { path: 'belezafeminina', component: BelezaFemininaComponent },
   { path: 'cursos', component: CursosComponent },
   { path: 'cursos-add', component: CursosAddComponent },
-    { path: 'cursos-add', component: CursosAddComponent },
 
 
 
