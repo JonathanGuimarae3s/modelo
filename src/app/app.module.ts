@@ -29,8 +29,6 @@ import { CardComponent } from './components/card/card.component';
 import { InputComponent } from './components/input/input.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
-import { AgendamentoComponent } from './pages/agendamento/agendamento.component';
-
 import { CursosComponent } from './pages/cursos/cursos.component';
 
 
@@ -41,6 +39,7 @@ import { CursosAddComponent } from './pages/cursos-add/cursos-add.component';
 
 
 import { CardCursosComponent } from './components/card-cursos/card-cursos.component';
+import { BarbeariaComponent } from './pages/barbearia/barbearia.component';
 
 
 
@@ -48,7 +47,6 @@ import { CardCursosComponent } from './components/card-cursos/card-cursos.compon
   declarations: [
     BelezaFemininaComponent,
      CursosComponent,
-      AgendamentoComponent,
     AppComponent,
     HomeComponent,
     FooterComponent,
@@ -71,6 +69,9 @@ import { CardCursosComponent } from './components/card-cursos/card-cursos.compon
     CursosAddComponent,
 
     CardCursosComponent,
+    BarbeariaComponent,    
+
+
 
 
 
