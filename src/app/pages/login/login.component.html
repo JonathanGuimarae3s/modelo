@@ -20,7 +20,8 @@
   >
     <h4>Login</h4>
     <form
-    #f="ngForm" (ngSubmit)="send(f)"
+      #f="ngForm"
+      (ngSubmit)="send(f)"
       class="d-flex justify-content-center align-items-center flex-column"
     >
       <app-input name="Email" [(ngModel)]="datas.email" type="email">
@@ -30,12 +31,12 @@
 
       <p class="text-start">Esqueceu a senha?</p>
 
-      <button type="button" class="btn btn-primary" type="ngSubmit">
+      <button  type="button" class="btn btn-primary" type="ngSubmit">
         Entrar
       </button>
-      <app-button></app-button>
+
     </form>
-    <a class="nav-link links mt-3" href="../Home/home.jsp">
+    <a class="nav-link links mt-3" routerLink="/dashboard">
       <h6>
         <b> Retornar ao site</b>
       </h6>
