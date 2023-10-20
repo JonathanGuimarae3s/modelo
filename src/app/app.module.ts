@@ -28,8 +28,6 @@ import { CardComponent } from './components/card/card.component';
 import { InputComponent } from './components/input/input.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
-import { AgendamentoComponent } from './pages/agendamento/agendamento.component';
-
 import { CursosComponent } from './pages/cursos/cursos.component';
 
 
@@ -49,7 +47,6 @@ import { BarbeariaComponent } from './pages/barbearia/barbearia.component';
   declarations: [
     BelezaFemininaComponent,
      CursosComponent,
-      AgendamentoComponent,
     AppComponent,
     HomeComponent,
     FooterComponent,
