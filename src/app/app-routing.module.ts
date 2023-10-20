@@ -9,6 +9,7 @@ import { BelezaFemininaComponent } from './pages/beleza-feminina/beleza-feminina
 
 import { CursosComponent } from './pages/cursos/cursos.component';
 import { CursosAddComponent } from './pages/cursos-add/cursos-add.component';
+import { BarbeariaComponent } from './pages/barbearia/barbearia.component';
 
 
 const routes: Routes = [
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'belezafeminina', component: BelezaFemininaComponent },
   { path: 'cursos', component: CursosComponent },
   { path: 'cursos-add', component: CursosAddComponent },
-    { path: 'cursos-add', component: CursosAddComponent },
+  { path: 'barbearia', component: BarbeariaComponent},
+
 
 
 

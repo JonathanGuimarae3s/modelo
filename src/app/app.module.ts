@@ -40,6 +40,7 @@ import { CursosAddComponent } from './pages/cursos-add/cursos-add.component';
 
 
 import { CardCursosComponent } from './components/card-cursos/card-cursos.component';
+import { BarbeariaComponent } from './pages/barbearia/barbearia.component';
 
 
 
@@ -72,7 +73,7 @@ import { CardCursosComponent } from './components/card-cursos/card-cursos.compon
     CursosAddComponent,
 
     CardCursosComponent,
-    
+    BarbeariaComponent,    
 
 
 
