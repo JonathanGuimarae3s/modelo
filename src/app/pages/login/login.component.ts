@@ -11,7 +11,7 @@ export class LoginComponent {
     password: '',
   };
   send(form: NgForm) {
-
+return
   }
 
 }
