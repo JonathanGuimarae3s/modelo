@@ -43,6 +43,7 @@ import { CardCursosComponent } from './components/card-cursos/card-cursos.compon
 
 
 
+
 @NgModule({
   declarations: [
     BelezaFemininaComponent,
@@ -71,6 +72,7 @@ import { CardCursosComponent } from './components/card-cursos/card-cursos.compon
     CursosAddComponent,
 
     CardCursosComponent,
+    
 
 
 
