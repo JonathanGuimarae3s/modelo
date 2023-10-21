@@ -21,20 +21,20 @@
             >Unidades</a
           >
           <div class="dropdown-menu m-0">
-            <a href="destination.html" class="dropdown-item"
+            <a [routerLink]="'/destination'" class="dropdown-item"
               >Casa do Menor S.M.A</a
             >
-            <a href="booking.html" class="dropdown-item"
+            <a [routerLink]="'/booking'" class="dropdown-item"
               >Instituto Embelleze
             </a>
-            <a href="team.html" class="dropdown-item">Senac N.I</a>
+            <a [routerLink]="'/team'" class="dropdown-item">Senac N.I</a>
           </div>
         </div>
         <a href="contact.html" class="nav-item nav-link">Galeria</a>
       </div>
       <a
-        href="/login"
-        class="btn btn-secondary rounded-pill py-2 px-4"
+      [routerLink]="'/login'"
+      class="btn btn-secondary rounded-pill py-2 px-4"
 
         >Login</a
       >
