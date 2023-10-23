@@ -1,1 +1,122 @@
-<p>sobre works!</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            transition: transform 0.3s;
+            background-color: #f9f9f9;
+        }
+
+        .section:hover {
+            transform: scale(1.02);
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .animated-text {
+            animation: slide-up 1s ease both;
+        }
+
+        @keyframes slide-up {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-family: 'Georgia', serif;">Sobre Nós</h1>
+    </header>
+    <div class="container">
+        <div class="section animated-text">
+            <h2 style="color: #333;">Nossa História</h2>
+            <p>Somos uma equipe dedicada a fornecer soluções de alta qualidade para nossos clientes. Nossa jornada começou em [ano de fundação], e desde então, temos trabalhado incansavelmente para atender às necessidades de nossos clientes.</p>
+            <img src="assets/img/barb.jpeg" alt="Modelo 1">
+        </div>
+
+        <div class="section animated-text">
+            <h2 style="color: #333;">Nossa Missão</h2>
+            <p>Nossa missão é [descrição da missão da empresa]. Estamos comprometidos em proporcionar excelência em [área de atuação da empresa] e criar valor para nossos clientes e parceiros.</p>
+            <img src="modelo2.jpg" alt="Modelo 2">
+        </div>
+
+        <div class="section animated-text">
+            <h2 style="color: #333;">Nossos Valores</h2>
+            <p>Nossos valores fundamentais incluem integridade, inovação, compromisso com a qualidade e satisfação do cliente. Trabalhamos para promover esses valores em tudo o que fazemos.</p>
+            <img src="valores.jpg" alt="Nossos Valores">
+        </div>
+
+        <div class="section animated-text">
+            <h2 style="color: #333;">Nossa Equipe</h2>
+            <p>Nossa equipe é composta por profissionais dedicados e experientes em suas respectivas áreas. Trabalhamos juntos para atender às necessidades de nossos clientes e alcançar nossos objetivos comuns.</p>
+            <img src="equipe.jpg" alt="Nossa Equipe">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Modelo, Todos os direitos reservados. Desenvolvido por <a href="https://htmlcodex.com" style="font-weight: 700;">Aliança Dev's</a></p>
+    </footer>
+</body>
+</html>

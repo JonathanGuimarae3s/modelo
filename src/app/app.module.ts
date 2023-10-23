@@ -39,15 +39,11 @@ import { CursosAddComponent } from './pages/cursos-add/cursos-add.component';
 
 
 import { BarbeariaComponent } from './pages/barbearia/barbearia.component';
-<<<<<<< Updated upstream
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 import { PoliticaPrivacidadeComponent } from './pages/politica-privacidade/politica-privacidade.component';
 import { TermoscondicoesComponent } from './pages/termoscondicoes/termoscondicoes.component';
 import { TrabalheconoscoComponent } from './pages/trabalheconosco/trabalheconosco.component';
-=======
-import { CursosUpdateComponent } from './pages/cursos-update/cursos-update.component';
->>>>>>> Stashed changes
 
 
 
@@ -76,18 +72,13 @@ import { CursosUpdateComponent } from './pages/cursos-update/cursos-update.compo
 
     CursosAddComponent,
 
-<<<<<<< Updated upstream
-    CardCursosComponent,
+
     BarbeariaComponent,
     SobreComponent,
     ContatoComponent,
     PoliticaPrivacidadeComponent,
     TermoscondicoesComponent,
     TrabalheconoscoComponent,
-=======
-    BarbeariaComponent,
-      CursosUpdateComponent,
->>>>>>> Stashed changes
 
 
 
