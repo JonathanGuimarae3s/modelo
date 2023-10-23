@@ -38,20 +38,23 @@ import { BelezaFemininaComponent } from './pages/beleza-feminina/beleza-feminina
 import { CursosAddComponent } from './pages/cursos-add/cursos-add.component';
 
 
-import { CardCursosComponent } from './components/card-cursos/card-cursos.component';
 import { BarbeariaComponent } from './pages/barbearia/barbearia.component';
+<<<<<<< Updated upstream
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 import { PoliticaPrivacidadeComponent } from './pages/politica-privacidade/politica-privacidade.component';
 import { TermoscondicoesComponent } from './pages/termoscondicoes/termoscondicoes.component';
 import { TrabalheconoscoComponent } from './pages/trabalheconosco/trabalheconosco.component';
+=======
+import { CursosUpdateComponent } from './pages/cursos-update/cursos-update.component';
+>>>>>>> Stashed changes
 
 
 
 @NgModule({
   declarations: [
     BelezaFemininaComponent,
-     CursosComponent,
+    CursosComponent,
     AppComponent,
     HomeComponent,
     FooterComponent,
@@ -73,6 +76,7 @@ import { TrabalheconoscoComponent } from './pages/trabalheconosco/trabalheconosc
 
     CursosAddComponent,
 
+<<<<<<< Updated upstream
     CardCursosComponent,
     BarbeariaComponent,
     SobreComponent,
@@ -80,6 +84,10 @@ import { TrabalheconoscoComponent } from './pages/trabalheconosco/trabalheconosc
     PoliticaPrivacidadeComponent,
     TermoscondicoesComponent,
     TrabalheconoscoComponent,
+=======
+    BarbeariaComponent,
+      CursosUpdateComponent,
+>>>>>>> Stashed changes
 
 
 
@@ -91,7 +99,7 @@ import { TrabalheconoscoComponent } from './pages/trabalheconosco/trabalheconosc
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule, FormsModule,SharedModule
+    HttpClientModule, FormsModule, SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

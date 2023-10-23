@@ -10,6 +10,7 @@ import { BelezaFemininaComponent } from './pages/beleza-feminina/beleza-feminina
 import { CursosComponent } from './pages/cursos/cursos.component';
 import { CursosAddComponent } from './pages/cursos-add/cursos-add.component';
 import { BarbeariaComponent } from './pages/barbearia/barbearia.component';
+<<<<<<< Updated upstream
 import { TeamComponent } from './components/team/team.component';
 import { BookingComponent } from './components/booking/booking.component';
 import { DestinationComponent } from './components/destination/destination.component';
@@ -18,6 +19,10 @@ import { ContatoComponent } from './pages/contato/contato.component';
 import { PoliticaPrivacidadeComponent } from './pages/politica-privacidade/politica-privacidade.component';
 import { TermoscondicoesComponent } from './pages/termoscondicoes/termoscondicoes.component';
 import { TrabalheconoscoComponent } from './pages/trabalheconosco/trabalheconosco.component';
+=======
+import { CursosUpdateComponent } from './pages/cursos-update/cursos-update.component';
+
+>>>>>>> Stashed changes
 
 const routes: Routes = [
 
@@ -29,6 +34,7 @@ const routes: Routes = [
   { path: 'cursos', component: CursosComponent },
   { path: 'cursos-add', component: CursosAddComponent },
   { path: 'barbearia', component: BarbeariaComponent },
+<<<<<<< Updated upstream
   { path: 'team', component: TeamComponent },
   { path: 'booking', component: BookingComponent },
   { path: 'destination', component: DestinationComponent },
@@ -40,6 +46,9 @@ const routes: Routes = [
 
 
 
+=======
+  { path: 'cursos/:id', component: CursosUpdateComponent }
+>>>>>>> Stashed changes
 
 ];
 

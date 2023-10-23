@@ -1,19 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { Lesson } from 'src/app/model/interface/lesson/lesson';
 import { LessonService } from 'src/app/model/service/lesson/lesson.service';
 
 @Component({
-  selector: 'app-cursos-add',
+  selector: 'app-cursos-update',
   template: `<div class="container">
-  <h4>Cadastrar um novo curso</h4>
+  <h4>Editar um  curso</h4>
   <form #f="ngForm" (ngSubmit)="send(f)">
     <input
       type="text"
-      id="institution"
       [(ngModel)]="datas.institution_id"
       name="institution_id"
       value="1"
+      id="institution"
     />
     <div class="mb-3">
       <label class="form-label">Nome do curso</label>
@@ -97,15 +98,16 @@ import { LessonService } from 'src/app/model/service/lesson/lesson.service';
       />
     </div>
 
-    <button class="btn btn-outline-secondary">Cadastrar</button>
+    <button class="btn btn-outline-secondary">Atualizar</button>
   </form>
 </div>
 `,
-  styleUrls: ['./cursos-add.component.css']
+  styleUrls: ['./cursos-update.component.css']
 })
-export class CursosAddComponent {
-  teste: string = "1";
+export class CursosUpdateComponent implements OnInit {
+  @Input() lesson!: Lesson;
   protected datas = {
+    id: '',
     nameLesson: '',
     segment: '',
     period: '',
@@ -116,12 +118,26 @@ export class CursosAddComponent {
     institution_id: '',
 
   }
-  constructor(private service: LessonService, private router: Router) { }
-  send(form: NgForm) {
-    const lesson = form.value;
-    return this.service.create(lesson).subscribe((response) => {
-      this.router.navigate(['cursos']);
-    })
-  }
 
+
+
+  constructor(private service: LessonService, private route: ActivatedRoute) {
+
+  }
+  ngOnInit(): void {
+    const id = this.route.snapshot.paramMap.get('id');
+
+    this.service.getLessonById(id).subscribe(
+      (response: Lesson) => {
+        this.datas = response;
+      }
+    )
+  }
+  protected send(form: NgForm) {
+    this.service.update(this.datas, this.datas.id).subscribe((response) => {
+
+    })
+
+
+  }
 }

@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
   <div class="card-body">
     <h5 class="card-title">{{ text }}</h5>
     <p class="card-text">{{ descricao }}</p>
+
   </div>
   <button
     type="button"
@@ -26,6 +27,8 @@ export class CardComponent {
   @Input() public descricao: string = '';
   @Input() public button: string = '';
   @Input() public url: string = '';
+  
+
 
 
 

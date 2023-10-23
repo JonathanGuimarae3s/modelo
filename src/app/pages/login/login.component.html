@@ -24,17 +24,34 @@
       (ngSubmit)="send(f)"
       class="d-flex justify-content-center align-items-center flex-column"
     >
-      <app-input name="Email" [(ngModel)]="datas.email" type="email">
-      </app-input>
-      <app-input name="Senha" [(ngModel)]="datas.password" type="password ">
-      </app-input>
+      <div class="mb-3">
+        <label for="Email" class="form-label">Email</label>
+        <input
+          type="text"
+          name="email"
+          class="form-control"
+          id=""
+          aria-describedby="helpId"
+          placeholder="Insira seu email"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="senha" class="form-label">Senha</label>
+        <input
+          type="password"
+          name="senha"
+          class="form-control"
+          id=""
+          aria-describedby="helpId"
+          placeholder="Insira sua senha"
+        />
+      </div>
 
       <p class="text-start">Esqueceu a senha?</p>
 
-      <button  type="button" class="btn btn-primary" type="ngSubmit">
+      <button type="button" class="btn btn-primary" type="ngSubmit">
         Entrar
       </button>
-
     </form>
     <a class="nav-link links mt-3" routerLink="/dashboard">
       <h6>
