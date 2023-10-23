@@ -1,1 +1,152 @@
-<p>trabalheconosco works!</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhe Conosco</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('seu-fundo.jpg') center/cover no-repeat;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Trabalhe Conosco</h1>
+    </header>
+    <div class="container">
+        <h2>Vagas Disponíveis</h2>
+        <p>Confira abaixo as vagas de emprego disponíveis em nossa empresa:</p>
+        <ul>
+            <li>Desenvolvedor Web</li>
+            <li>Designer Gráfico</li>
+            <li>Gerente de Vendas</li>
+            <li>Desenvolvedor Full-Stack</li>
+            <li>Desenvolvedor Front-End</li>
+            <li>Desenvolvedor Desenvolvedor Pleno</li>
+            <li>Desenvolvedor BackEnd</li>
+
+        </ul>
+        <h2>Como se Candidatar</h2>
+        <p>Para se candidatar a uma vaga, preencha o formulário abaixo:</p>
+        <form action="processar_candidatura.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="vaga">Vaga de Interesse:</label>
+            <select id="vaga" name="vaga">
+                <option value="Desenvolvedor Web">Desenvolvedor Web</option>
+                <option value="Designer Gráfico">Designer Gráfico</option>
+                <option value="Gerente de Vendas">Gerente de Vendas</option>
+                <option value="Desenvolvedor Full-Stack">Desenvolvedor Full-Stack</option>
+                <option value="Desenvolvedor Front-End">Desenvolvedor Front-End</option>
+                <option value="Desenvolvedor Pleno">Desenvolvedor Pleno</option>
+                <option value="Desenvolvedor BackEnd">Desenvolvedor BackEnd</option>
+                
+
+            </select><br>
+            <input type="submit" value="Enviar Candidatura">
+        </form>
+    </div>
+    <footer>
+        &copy; <a>Modelo</a>, Todos os direitos reservados. Desenvolvido por <a class="border-bottom"
+            href="https://htmlcodex.com">Aliança Dev's</a>
+    </footer>
+</body>
+
+</html>
