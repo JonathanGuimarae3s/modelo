@@ -10,7 +10,14 @@ import { BelezaFemininaComponent } from './pages/beleza-feminina/beleza-feminina
 import { CursosComponent } from './pages/cursos/cursos.component';
 import { CursosAddComponent } from './pages/cursos-add/cursos-add.component';
 import { BarbeariaComponent } from './pages/barbearia/barbearia.component';
-
+import { TeamComponent } from './components/team/team.component';
+import { BookingComponent } from './components/booking/booking.component';
+import { DestinationComponent } from './components/destination/destination.component';
+import { SobreComponent } from './pages/sobre/sobre.component';
+import { ContatoComponent } from './pages/contato/contato.component';
+import { PoliticaPrivacidadeComponent } from './pages/politica-privacidade/politica-privacidade.component';
+import { TermoscondicoesComponent } from './pages/termoscondicoes/termoscondicoes.component';
+import { TrabalheconoscoComponent } from './pages/trabalheconosco/trabalheconosco.component';
 
 const routes: Routes = [
 
@@ -21,7 +28,19 @@ const routes: Routes = [
   { path: 'belezafeminina', component: BelezaFemininaComponent },
   { path: 'cursos', component: CursosComponent },
   { path: 'cursos-add', component: CursosAddComponent },
-  { path: 'barbearia', component: BarbeariaComponent},
+  { path: 'barbearia', component: BarbeariaComponent },
+  { path: 'team', component: TeamComponent },
+  { path: 'booking', component: BookingComponent },
+  { path: 'destination', component: DestinationComponent },
+  { path: 'sobre', component: SobreComponent },
+  { path: 'contato', component: ContatoComponent },
+  { path: 'politicaprivacidade', component: PoliticaPrivacidadeComponent },
+  { path: 'termoscondicoes', component: ContatoComponent },
+  { path: 'trabaleconosco', component: TrabalheconoscoComponent },
+
+
+
+
 ];
 
 @NgModule({

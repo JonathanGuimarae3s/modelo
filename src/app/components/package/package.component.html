@@ -56,7 +56,7 @@
                         <p>Realizando cadastro de novos alunos, voltaremos as atividades dia 03 de julho.</p>
                         <div class="d-flex justify-content-center mb-2">
 
-                            <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 30px 0 30px 0;" id="open-modal" data-toggle="modal" data-target="#modalAgendar">Agendar</a>
+                            <a [routerLink]="'/agendamento'" class="btn btn-sm btn-primary px-3" style="border-radius: 30px 0 30px 0;" id="open-modal" data-toggle="modal" data-target="#modalAgendar">Agendar</a>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                         <p>Turmas que deram início ao curso entre Setembro e Outubro de 2022.</p>
                         <div class="d-flex justify-content-center mb-2">
                             <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Horários</a>
-                            <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Agendar</a>
+                            <a [routerLink]="'/agendamento'" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Agendar</a>
                         </div>
                     </div>
                 </div>
