@@ -9,7 +9,7 @@ export class SchedulingService {
   constructor(private http: HttpClient) { }
 
   getAll() {
-    return this.http.get<Scheduling[]>(this.apiUrl);
+    return this.http.get<[]>(this.apiUrl);
   }
   getByDate(date: string) {
     return this.http.get<Scheduling[]>(this.apiUrl + '/' + date);
