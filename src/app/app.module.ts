@@ -44,6 +44,7 @@ import { ContatoComponent } from './pages/contato/contato.component';
 import { PoliticaPrivacidadeComponent } from './pages/politica-privacidade/politica-privacidade.component';
 import { TermoscondicoesComponent } from './pages/termoscondicoes/termoscondicoes.component';
 import { TrabalheconoscoComponent } from './pages/trabalheconosco/trabalheconosco.component';
+import { CursosUpdateComponent } from './pages/cursos-update/cursos-update.component';
 
 
 
@@ -79,6 +80,8 @@ import { TrabalheconoscoComponent } from './pages/trabalheconosco/trabalheconosc
     PoliticaPrivacidadeComponent,
     TermoscondicoesComponent,
     TrabalheconoscoComponent,
+    BarbeariaComponent,
+    CursosUpdateComponent,
 
 
 

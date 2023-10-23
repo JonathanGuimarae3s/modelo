@@ -13,19 +13,45 @@ import { Scheduling } from 'src/app/model/interface/scheduling/scheduling';
 
 @Component({
   selector: 'app-agendamento',
-  templateUrl: './agendamento.component.html',
+  template: `
+  <div class="container">
+  <h3 class="titulo3">Agendamentos</h3>
+  <h4>Manhã</h4>
+
+  <div *ngFor="let scheduling of this.schedulings">
+    <table class="table"  *ngIf="scheduling.period === 'Manha'">
+      <thead>
+        <tr>
+          <th scope="col">{{scheduling.period}}</th>
+          <th scope="col">Cliente</th>
+          <th scope="col">Cliente</th>
+          <th scope="col">Cliente</th>
+          <th scope="col">Cliente</th>
+          <th scope="col">Cliente</th>
+          <th scope="col">Data</th>
+          <th scope="col">Codigo de Confirmação</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+</div>
+`,
   styleUrls: ['./agendamento.component.css']
 })
 export class AgendamentoComponent implements OnInit {
   protected date: Date = new Date();
   protected today: string =
     `${this.date.getDate()}/${this.date.getMonth()}/${this.date.getFullYear()}`;
-  lessons: Lesson[] = [];
-  scheduling: Scheduling[] = [];
-  constructor( private lessonService: LessonService, private schedulingService: SchedulingService) { }
+
+  public schedulings: any = [];
+  constructor(private lessonService: LessonService, private schedulingService: SchedulingService) { }
 
   ngOnInit() {
-  
 
+
+    this.schedulingService.getAll().subscribe((response) => {
+      this.schedulings = response;
+      console.log(this.schedulings);
+    })
   }
 }
