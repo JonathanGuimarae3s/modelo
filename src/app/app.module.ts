@@ -46,6 +46,7 @@ import { TermoscondicoesComponent } from './pages/termoscondicoes/termoscondicoe
 import { TrabalheconoscoComponent } from './pages/trabalheconosco/trabalheconosco.component';
   
 import { CursosUpdateComponent } from './pages/cursos-update/cursos-update.component';
+import { NavbarAdmComponent } from './components/navbar-adm/navbar-adm.component';
  
 
 
@@ -83,6 +84,7 @@ import { CursosUpdateComponent } from './pages/cursos-update/cursos-update.compo
     TermoscondicoesComponent,
     TrabalheconoscoComponent,
      CursosUpdateComponent,
+     NavbarAdmComponent,
 
 
 

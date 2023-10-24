@@ -20,6 +20,8 @@ import { TrabalheconoscoComponent } from './pages/trabalheconosco/trabalheconosc
 
 import { TermoscondicoesComponent } from './pages/termoscondicoes/termoscondicoes.component';
 import { CursosUpdateComponent } from './pages/cursos-update/cursos-update.component';
+import { NavbarAdmComponent } from './components/navbar-adm/navbar-adm.component';
+import { ClientService } from './model/service/client/client.service';
 
 
 const routes: Routes = [
@@ -41,7 +43,12 @@ const routes: Routes = [
   { path: 'termoscondicoes', component: TermoscondicoesComponent },
   { path: 'trabaleconosco', component: TrabalheconoscoComponent },
 
-  { path: 'cursos/:id', component: CursosUpdateComponent }
+  { path: 'cursos/:id', component: CursosUpdateComponent },
+  { path: 'navbaradm', component: NavbarAdmComponent },
+  { path: 'cliente', component:ClientService  },
+
+
+
 
 ];
 
