@@ -21,7 +21,7 @@ import { TrabalheconoscoComponent } from './pages/trabalheconosco/trabalheconosc
 import { TermoscondicoesComponent } from './pages/termoscondicoes/termoscondicoes.component';
 import { CursosUpdateComponent } from './pages/cursos-update/cursos-update.component';
 
- 
+
 const routes: Routes = [
 
   { path: 'login', component: LoginComponent },
@@ -41,10 +41,8 @@ const routes: Routes = [
   { path: 'termoscondicoes', component: TermoscondicoesComponent },
   { path: 'trabaleconosco', component: TrabalheconoscoComponent },
 
+  { path: 'cursos/:id', component: CursosUpdateComponent }
 
-
-   { path: 'cursos/:id', component: CursosUpdateComponent }
- 
 ];
 
 @NgModule({
