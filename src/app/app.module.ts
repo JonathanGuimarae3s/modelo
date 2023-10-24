@@ -42,10 +42,16 @@ import { BarbeariaComponent } from './pages/barbearia/barbearia.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 
+
 import { CursosUpdateComponent } from './pages/cursos-update/cursos-update.component';
 
 import { CommonModule } from '@angular/common';
 import { AgendamentoComponent } from './pages/agendamento/agendamento.component';
+import { NavbarAdmComponent } from './components/navbar-adm/navbar-adm.component';
+
+
+
+
 @NgModule({
   declarations: [
     BelezaFemininaComponent,
@@ -72,14 +78,21 @@ import { AgendamentoComponent } from './pages/agendamento/agendamento.component'
     CursosAddComponent,
 
 
-    BarbeariaComponent,
+
+     BarbeariaComponent,
     SobreComponent,
     ContatoComponent,
+
 
     BarbeariaComponent,
     CursosUpdateComponent,
 
-    AgendamentoComponent
+    AgendamentoComponent,
+
+     NavbarAdmComponent,
+
+
+
 
 
 

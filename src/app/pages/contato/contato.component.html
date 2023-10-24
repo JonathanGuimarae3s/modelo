@@ -1,1 +1,129 @@
-<p>contato works!</p>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contato</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            background-color: #333;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Entre em Contato</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a [routerLink]="'/sobre'">Sobre Nós</a></li>
+            <li><a [routerLink]="'/contato'">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Informações de Contato</h2>
+        <p>Se você deseja entrar em contato conosco, utilize as informações abaixo:</p>
+        <address>
+            <p>Endereço: 123 Rua da Amostra</p>
+            <p>Cidade: Sua Cidade</p>
+            <p>CEP: 12345-678</p>
+        </address>
+        <p>Email: <a href="mailto:seuemail@example.com">seuemail@example.com</a></p>
+        <p>Telefone: (12) 3456-7890</p>
+    </section>
+
+    <section>
+        <h2>Formulário de Contato</h2>
+        <form action="processar_formulario.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        &copy; <a>Modelo</a>, Todos os direitos reservados. Desenvolvido por <a class="border-bottom"
+            href="https://htmlcodex.com">Aliança Dev's</a>
+    </footer>
+
+</body>
+
+</html>

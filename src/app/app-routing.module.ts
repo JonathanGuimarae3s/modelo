@@ -15,8 +15,9 @@ import { BookingComponent } from './components/booking/booking.component';
 import { DestinationComponent } from './components/destination/destination.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { ContatoComponent } from './pages/contato/contato.component';
-
 import { CursosUpdateComponent } from './pages/cursos-update/cursos-update.component';
+import { NavbarAdmComponent } from './components/navbar-adm/navbar-adm.component';
+import { ClientService } from './model/service/client/client.service';
 
 
 const routes: Routes = [
@@ -34,11 +35,13 @@ const routes: Routes = [
   { path: 'destination', component: DestinationComponent },
   { path: 'sobre', component: SobreComponent },
   { path: 'contato', component: ContatoComponent },
-  { path: 'termoscondicoes', component: ContatoComponent },
+
+  { path: 'cursos/:id', component: CursosUpdateComponent },
+  { path: 'navbaradm', component: NavbarAdmComponent },
+  { path: 'cliente', component:ClientService  },
 
 
 
-  { path: 'cursos/:id', component: CursosUpdateComponent }
 
 ];
 

@@ -27,6 +27,8 @@ export class AgendamentoComponent implements OnInit {
   constructor(private lessonService: LessonService, private schedulingService: SchedulingService) { }
 
   ngOnInit() {
+    
+ 
 
     this.schedulingService.getAll().subscribe((response) => {
       this.schedulings = response
