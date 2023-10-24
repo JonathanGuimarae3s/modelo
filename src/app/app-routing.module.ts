@@ -16,9 +16,9 @@ import { DestinationComponent } from './components/destination/destination.compo
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 import { PoliticaPrivacidadeComponent } from './pages/politica-privacidade/politica-privacidade.component';
-import { TermoscondicoesComponent } from './pages/termoscondicoes/termoscondicoes.component';
 import { TrabalheconoscoComponent } from './pages/trabalheconosco/trabalheconosco.component';
-  
+
+import { TermoscondicoesComponent } from './pages/termoscondicoes/termoscondicoes.component';
 import { CursosUpdateComponent } from './pages/cursos-update/cursos-update.component';
 
  
@@ -38,7 +38,7 @@ const routes: Routes = [
   { path: 'sobre', component: SobreComponent },
   { path: 'contato', component: ContatoComponent },
   { path: 'politicaprivacidade', component: PoliticaPrivacidadeComponent },
-  { path: 'termoscondicoes', component: ContatoComponent },
+  { path: 'termoscondicoes', component: TermoscondicoesComponent },
   { path: 'trabaleconosco', component: TrabalheconoscoComponent },
 
 
