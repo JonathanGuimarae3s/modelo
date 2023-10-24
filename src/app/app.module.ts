@@ -41,13 +41,11 @@ import { CursosAddComponent } from './pages/cursos-add/cursos-add.component';
 import { BarbeariaComponent } from './pages/barbearia/barbearia.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { ContatoComponent } from './pages/contato/contato.component';
-import { PoliticaPrivacidadeComponent } from './pages/politica-privacidade/politica-privacidade.component';
-import { TermoscondicoesComponent } from './pages/termoscondicoes/termoscondicoes.component';
-import { TrabalheconoscoComponent } from './pages/trabalheconosco/trabalheconosco.component';
+
 import { CursosUpdateComponent } from './pages/cursos-update/cursos-update.component';
 
-
-
+import { CommonModule } from '@angular/common';
+import { AgendamentoComponent } from './pages/agendamento/agendamento.component';
 @NgModule({
   declarations: [
     BelezaFemininaComponent,
@@ -77,25 +75,22 @@ import { CursosUpdateComponent } from './pages/cursos-update/cursos-update.compo
     BarbeariaComponent,
     SobreComponent,
     ContatoComponent,
-    PoliticaPrivacidadeComponent,
-    TermoscondicoesComponent,
-    TrabalheconoscoComponent,
+
     BarbeariaComponent,
     CursosUpdateComponent,
 
-
+    AgendamentoComponent
 
 
 
 
 
   ],
-  imports: [
-    BrowserModule,
+  imports: [CommonModule,
     AppRoutingModule,
-    HttpClientModule, FormsModule, SharedModule
+    HttpClientModule, FormsModule, SharedModule, BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

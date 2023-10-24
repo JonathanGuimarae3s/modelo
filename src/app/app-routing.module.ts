@@ -15,9 +15,7 @@ import { BookingComponent } from './components/booking/booking.component';
 import { DestinationComponent } from './components/destination/destination.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { ContatoComponent } from './pages/contato/contato.component';
-import { PoliticaPrivacidadeComponent } from './pages/politica-privacidade/politica-privacidade.component';
-import { TermoscondicoesComponent } from './pages/termoscondicoes/termoscondicoes.component';
-import { TrabalheconoscoComponent } from './pages/trabalheconosco/trabalheconosco.component';
+
 import { CursosUpdateComponent } from './pages/cursos-update/cursos-update.component';
 
 
@@ -36,9 +34,7 @@ const routes: Routes = [
   { path: 'destination', component: DestinationComponent },
   { path: 'sobre', component: SobreComponent },
   { path: 'contato', component: ContatoComponent },
-  { path: 'politicaprivacidade', component: PoliticaPrivacidadeComponent },
   { path: 'termoscondicoes', component: ContatoComponent },
-  { path: 'trabaleconosco', component: TrabalheconoscoComponent },
 
 
 

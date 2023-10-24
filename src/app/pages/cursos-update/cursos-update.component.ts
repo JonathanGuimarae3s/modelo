@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Lesson } from 'src/app/model/interface/lesson/lesson';
 import { LessonService } from 'src/app/model/service/lesson/lesson.service';
 
@@ -121,7 +121,7 @@ export class CursosUpdateComponent implements OnInit {
 
 
 
-  constructor(private service: LessonService, private route: ActivatedRoute) {
+  constructor(private service: LessonService, private router: Router, private route: ActivatedRoute) {
 
   }
   ngOnInit(): void {
@@ -135,7 +135,7 @@ export class CursosUpdateComponent implements OnInit {
   }
   protected send(form: NgForm) {
     this.service.update(this.datas, this.datas.id).subscribe((response) => {
-
+      this.router.navigate(['cursos'])
     })
 
 
