@@ -16,7 +16,7 @@
                 <p>Turmas que deram início ao curso entre Janeiro e Fevereiro de 2023.</p>
                 <div class="d-flex justify-content-center mb-2">
                     <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Horários</a>
-                    <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Agendar</a>
+                    <a [routerLink]="'/agendamento'" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Agendar</a>
                 </div>
             </div>
         </div>
@@ -33,7 +33,7 @@
                 <p>Disponivel no institudo Embraer</p>
                 <div class="d-flex justify-content-center mb-2">
 
-                    <a routerLink="/agendamento" class="btn btn-sm btn-primary px-3" style="border-radius: 30px 0 30px 0;" id="open-modal" data-toggle="modal" data-target="#modalAgendar">Agendar</a>
+                    <a [routerLink]="'/agendamento'" class="btn btn-sm btn-primary px-3" style="border-radius: 30px 0 30px 0;" id="open-modal" data-toggle="modal" data-target="#modalAgendar">Agendar</a>
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
                 <p>Disponivel no senacRJ</p>
                 <div class="d-flex justify-content-center mb-2">
                     <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Horários</a>
-                    <a routerLink="/agendamento" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Agendar</a>
+                    <a [routerLink]="'/agendamento'" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Agendar</a>
                 </div>
             </div>
         </div>
