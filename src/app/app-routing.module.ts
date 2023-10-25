@@ -22,13 +22,13 @@ import { ClientService } from './model/service/client/client.service';
 
 const routes: Routes = [
 
-  { path: 'login', component: LoginComponent },
+  { path: 'adm/login', component: LoginComponent },
   { path: '', component: HomeComponent },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'agendamento', component: AgendamentoComponent },
+  { path: 'adm/dashboard', component: DashboardComponent },
+  { path: 'adm/agendamento', component: AgendamentoComponent },
   { path: 'belezafeminina', component: BelezaFemininaComponent },
-  { path: 'cursos', component: CursosComponent },
-  { path: 'cursos-add', component: CursosAddComponent },
+  { path: 'adm/cursos', component: CursosComponent },
+  { path: 'adm/cursos-add', component: CursosAddComponent },
   { path: 'barbearia', component: BarbeariaComponent },
   { path: 'team', component: TeamComponent },
   { path: 'booking', component: BookingComponent },
@@ -36,9 +36,8 @@ const routes: Routes = [
   { path: 'sobre', component: SobreComponent },
   { path: 'contato', component: ContatoComponent },
 
-  { path: 'cursos/:id', component: CursosUpdateComponent },
+  { path: 'adm/cursos/:id', component: CursosUpdateComponent },
   { path: 'navbaradm', component: NavbarAdmComponent },
-  { path: 'cliente', component:ClientService  },
 
 
 

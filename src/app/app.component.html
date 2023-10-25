@@ -1,3 +1,5 @@
-<app-header *ngIf="currentUrl !== '/login'"></app-header>
+<app-header *ngIf="!currentUrl.startsWith('/adm')"></app-header>
+
+<app-navbar-adm  *ngIf="currentUrl.startsWith('/adm')"></app-navbar-adm>
 <router-outlet></router-outlet>
-<app-footer *ngIf="currentUrl !== '/login'"></app-footer>
+<app-footer *ngIf="!currentUrl.startsWith('/adm')"></app-footer>

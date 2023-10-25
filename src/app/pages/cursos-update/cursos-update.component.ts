@@ -6,7 +6,7 @@ import { LessonService } from 'src/app/model/service/lesson/lesson.service';
 
 @Component({
   selector: 'app-cursos-update',
-  template: `<div class="container">
+  template: `<div class="container bg-white my-5 p-4">
   <h4>Editar um  curso</h4>
   <form #f="ngForm" (ngSubmit)="send(f)">
     <input

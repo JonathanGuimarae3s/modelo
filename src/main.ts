@@ -10,9 +10,9 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
 
 
- // Verifique se o caminho da URL é "/login"
-if (window.location.pathname === "/login") {
-  // Se o caminho for "/login", adicione a classe "bg-dark" ao elemento "body"
-  document.body.classList.add("bg-dark");
+// Verifique se o caminho da URL é "/login" ou começa com "/adm"
+if (window.location.pathname.startsWith("/adm")) {
+  // Se o caminho for "/login" ou começar com "/adm", adicione a classe "bg-dark" ao elemento "body"
+  document.body.classList.add("bg-secondary");
 }
 
