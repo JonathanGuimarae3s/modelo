@@ -7,14 +7,9 @@ import { LessonService } from 'src/app/model/service/lesson/lesson.service';
   selector: 'app-cursos-add',
   template: `<div class="container bg-white my-5 p-4">
   <h4>Cadastrar um novo curso</h4>
+  <a href="adm/dashboard" class="nav nav-link"><h6>Voltar</h6></a>
   <form #f="ngForm" (ngSubmit)="send(f)">
-    <input
-      type="text"
-      id="institution"
-      [(ngModel)]="datas.institution_id"
-      name="institution_id"
-      value="1"
-    />
+
     <div class="mb-3">
       <label class="form-label">Nome do curso</label>
       <input
@@ -104,7 +99,6 @@ import { LessonService } from 'src/app/model/service/lesson/lesson.service';
   styleUrls: ['./cursos-add.component.css']
 })
 export class CursosAddComponent {
-  teste: string = "1";
   protected datas = {
     nameLesson: '',
     segment: '',
@@ -113,14 +107,16 @@ export class CursosAddComponent {
     students: '',
     endTime: '',
     startTime: '',
-    institution_id: '',
+    institution_id: 1,
 
   }
   constructor(private service: LessonService, private router: Router) { }
   send(form: NgForm) {
     const lesson = form.value;
+    console.log(lesson)
     return this.service.create(lesson).subscribe((response) => {
-      this.router.navigate(['cursos']);
+
+      this.router.navigate(['adm/cursos']);
     })
   }
 

@@ -6,6 +6,7 @@ import { LessonService } from 'src/app/model/service/lesson/lesson.service';
   selector: 'app-cursos',
   template: `<div id="container"class="container bg-white my-5">
   <h1>Cursos</h1>
+  <a href="adm/dashboard" class="nav nav-link"><h6>Voltar</h6></a>
   <div class="d-flex flex-column ">
     <div class="my-5"><h4>Manhã</h4></div>
     <div class="container ">

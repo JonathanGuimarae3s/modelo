@@ -8,6 +8,7 @@ import { LessonService } from 'src/app/model/service/lesson/lesson.service';
   selector: 'app-cursos-update',
   template: `<div class="container bg-white my-5 p-4">
   <h4>Editar um  curso</h4>
+  <a href="adm/cursos" class="nav nav-link"><h6>Voltar</h6></a>
   <form #f="ngForm" (ngSubmit)="send(f)">
     <input
       type="text"
@@ -135,7 +136,7 @@ export class CursosUpdateComponent implements OnInit {
   }
   protected send(form: NgForm) {
     this.service.update(this.datas, this.datas.id).subscribe((response) => {
-      this.router.navigate(['cursos'])
+      this.router.navigate(['adm/cursos'])
     })
 
 
