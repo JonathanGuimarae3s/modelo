@@ -20,21 +20,7 @@ import { Component } from '@angular/core';
         <a href="index.html" class="nav-item nav-link active">Home</a>
         <a [routerLink]="'/belezafeminina'" class="nav-item nav-link">Beleza Feminina</a>
         <a [routerLink]="'/barbearia'" class="nav-item nav-link">Barbearia</a>
-        <div class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-            >Unidades</a
-          >
-          <div class="dropdown-menu m-0">
-            <a [routerLink]="'/destination'" class="dropdown-item"
-              >Casa do Menor S.M.A</a
-            >
-            <a [routerLink]="'/booking'" class="dropdown-item"
-              >Instituto Embelleze
-            </a>
-            <a [routerLink]="'/team'" class="dropdown-item">Senac N.I</a>
-          </div>
-        </div>
-        <a href="contact.html" class="nav-item nav-link">Galeria</a>
+
       </div>
 
     </div>
@@ -48,14 +34,7 @@ import { Component } from '@angular/core';
             Torne-se um <span class="text-primary">Modelo</span>
           </h1>
           <p class="fs-4 text-white mb-4 animated slideInDown">{{ frase }}</p>
-          <div class="position-relative w-75 mx-auto animated slideInDown">
-            <input
-              class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5"
-              type="text"
-              placeholder="Busque a unidade mais próxima de você:"
-            />
-            <app-button text="Pesquisar"></app-button>
-          </div>
+
         </div>
       </div>
     </div>
